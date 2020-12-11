@@ -14,7 +14,8 @@ $totalprice=Cart::find()->joinWith('listing')->sum('price');
 $lists=Cart::find()->joinWith('listing')->all();
 
 ?>
-<h1 style="margin-bottom: 0px;">Invoice</h1>
+<h1 style="margin-bottom: 0px; text-align: center;">Invoice</h1>
+
 <div class="checkout-view" style="margin-top: 5px">
 
     <h1><?= Html::encode($this->title) ?></h1>
